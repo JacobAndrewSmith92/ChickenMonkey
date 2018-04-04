@@ -7,3 +7,19 @@ For example...
 
 */
 
+ function chickenMonkey(number) {
+    for (let i = 0; i <= number; i++ ) {
+        if (i % 5 === 0 && i % 7 === 0)  {
+            console.log(`ChickenMonkey`);
+        } else if (i % 7 === 0 ) {
+            console.log(`Monkey`);
+        } else if (i % 5 === 0) {
+            console.log(`Chicken`);
+        } else {
+            console.log(i);
+        }
+    }
+
+ }
+
+ chickenMonkey(100);
